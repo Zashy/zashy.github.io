@@ -1,0 +1,167 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The Snake Extravaganza</title>
+  <meta name="description" content="Party Invite">
+  <meta name="author" content="Zashyshy">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baloo Bhaina 2">
+
+  <style type="text/css">
+    html, body {
+      margin: 0;
+      padding: 0;
+      background-color: #151314;
+      color: #bd1c4a;
+      flex-direction: column;
+      align-items: center;
+      display: flex;
+      line-height: 1;
+      font-family: "Baloo Bhaina 2", sans-serif;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    .container {
+      margin: 128px 0;
+    }
+    .container main {
+      margin-bottom: 32px;
+    }
+    .container h1 {
+      font-size: 28px;
+      margin: 0 0 4px;
+      /*color: #801836; */
+    }
+    .container h2 {
+      font-size: 46px;
+      font-family: "Monoton", sans-serif;
+      margin: 0 0 64px;
+      color: #6d09a9;
+      font-weight: normal;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #6d09a9;
+      text-transform: uppercase;
+    }
+    .poster {
+      margin-bottom: 12px;
+    }
+    .poster img {
+      border: 2px solid #f00;
+      padding: 4px;
+      border-radius: 2px;
+    }
+
+    .footer-actions {
+      display: flex;
+      justify-content: center;
+    }
+    .footer-action {
+      font-size: 28px;
+      border: 2px solid #004da3;
+      padding: 12px 16px 8px;
+      background-color: #00326a;
+      color: #eee;
+      display: inline-block;
+      border-radius: 6px;
+      margin-bottom: 24px;
+      text-decoration: none;
+    }
+    .footer-action:hover {
+      border-color: #bd1c4a;
+      background-color: #6d09a9;
+      color: #eee;
+    }
+    .footer h3 {
+      margin: 0;
+      font-size: 24px; 
+    }
+    .faq ul {
+      list-style: none;
+      padding-left: 16px;
+    }
+    .faq h4 {
+      font-size: 20px;
+    }
+    .faq label:hover h4 {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    .faq input {
+      display: none;
+    }
+    .faq p {
+      height: 0;
+      overflow: hidden;
+      border-left: 3px solid #0f0;
+      padding-left: 16px;
+      background-color: #222;
+      color: #eee;
+      line-height: 1.25;
+      transition: height 200ms linear;
+      margin: 0;
+    }
+    .faq input:checked + p {
+      height: 50px;
+      padding-top: 4px;
+      padding-bottom: 4px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <main>
+      <h1>You're invited to:</h1>
+      <h2>Big Snake Extravaganza!</h1>
+      <div class="poster">
+        <a class="poster-action" href="/todo">
+          <img src="https://placekitten.com/768/1366" alt="Big snake extravaganza, click to vote on time" />
+        </a>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-actions">
+        <a class="footer-action" href="/todo">Vote For a Time</a>
+      </div>
+      <section class="faq">
+        <h3>FAQ</h2>
+        <ul>
+          <li>
+            <label>
+              <h4>Why do I have to vote?</h4>
+              <input type="checkbox" />
+              <p>You don't have to. Just want to try and plan around most people's schedules.</p>
+            </label>
+          </li>
+          <li>
+            <label>
+              <h4>When will the results be available?</h4>
+              <input type="checkbox" />
+              <p>At least a week before the final date. The website will be updated if you wanna save it somewhere.</p>
+            </label>
+          </li>
+          <li>
+            <label>
+              <h4>Where will this be happening?</h4>
+              <input type="checkbox" />
+              <p>At 'The Void'.</p>
+            </label>
+          </li>
+          <li>
+            <label>
+              <h4>Why?</h4>
+              <input type="checkbox" />
+              <p>For friendship!</p>
+            </label>
+          </li>
+        </ul>
+      </section>
+    </footer>
+  </div>
+</body>
+</html>
